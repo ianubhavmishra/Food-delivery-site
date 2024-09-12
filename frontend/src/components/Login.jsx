@@ -2,7 +2,7 @@ import React, {useContext, useState} from 'react'
 import { assets } from '../assets/assets'
 import { Store_context } from './context/Store_context';
 import axios from 'axios'
-import ScrollLock from 'react-scrolllock';
+// import ScrollLock from 'react-scrolllock';
 
 const Login = ({setShowLogin}) => {
 
@@ -37,7 +37,6 @@ const Login = ({setShowLogin}) => {
 
 
   return (
-<ScrollLock>
     <div className='grid w-full h-[100vh] top-0  bg-[#00000090] absolute z-10'>
       <form onSubmit={onLogin} className='place-self-center bg-gray-300 w-96 max-md:w-60 rounded-lg'>
         <div className='flex justify-between w-80 max-md:w-52 m-auto py-4 items-center font-semibold text-xl'>
@@ -62,7 +61,6 @@ const Login = ({setShowLogin}) => {
         </div>
       </form>
     </div>
- </ScrollLock>
   )
 }
 
