@@ -6,7 +6,7 @@ const stripe = new Stripe('sk_test_51PvkHj03XjREp9cDvWVkyW4d9GKlRt3C6uCoIZGT9smw
 
 //place order for frontend
 const placeOrder = async (req, res) => {
-    const frontendUrl = "http://localhost:5173";
+    const frontendUrl = "https://tomato-food-delivery-vjmy.onrender.com";
     try {
         const newOrder = new orderModel({
             userId: req.body.userId,
