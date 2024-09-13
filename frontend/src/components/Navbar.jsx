@@ -34,7 +34,6 @@ const Navbar = ({setShowLogin}) => {
         </div>
         <div>
           {!token?<button onClick={()=>setShowLogin(true)} className='border px-5 py-2 max-md:py-0 max-md:px-1  border-black rounded-2xl hover:font-medium'>Sign in</button>:
-          <>
           <div className='group absolute top-5 z-10'>
             <img className='max-md:h-5 max-md:w-4 h-8 w-7' src={assets.profile_icon}/>
             <ul className='hidden group-hover:flex flex-col gap-1 border border-gray-500 p-1 rounded-md bg-orange-100 relative right-[70px] mt-2 max-md:w-20 max-md:right-16'>
@@ -42,8 +41,7 @@ const Navbar = ({setShowLogin}) => {
               <hr/>
               <li onClick={logOut} className='flex items-center gap-1 hover:text-orange-600  max-md:text-xs'><img className='max-md:size-5' src={assets.logout_icon}/>Log-out</li>
             </ul>
-          </div>
-          </>}
+          </div>}
         
         </div>
       </div>

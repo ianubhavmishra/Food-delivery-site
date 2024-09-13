@@ -9,7 +9,7 @@ const Cart = () => {
   const { cartItems, food_list, removeFromCart, addToCart, totalCartAmount , url} = useContext(Store_context)
 
   return (
-    <div className='max-w-[80vw] m-auto my-10'>
+    <div className='max-w-[80vw] max-md:max-w-[90vw] m-auto my-10'>
       <div className='flex justify-between text-center animate-fadeIn'>
         <p className='w-32'>Item</p>
         <p className='w-32'>Price</p>

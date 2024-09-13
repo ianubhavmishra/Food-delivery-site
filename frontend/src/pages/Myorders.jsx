@@ -23,7 +23,7 @@ const Myorders = () => {
     }, [token])
 
     return (
-        <div className='mt-10 m-auto w-[80vw] h-[36vh]'>
+        <div className='mt-10 m-auto w-[80vw] max-md:w-[90vw] min-h-[36vh]'>
             <h1 className='font-medium text-2xl'>My Orders</h1>
             <div>
                 {data.map((order, index) => {

@@ -55,9 +55,9 @@ useEffect(() => {
 
 
 return (
-  <form onSubmit={placeOrder} className='flex max-md:flex-col max-md:gap-8 justify-between w-[80vw] m-auto max-md:my10 my-20'>
+  <form onSubmit={placeOrder} className='flex max-md:flex-col max-md:gap-8 justify-between w-[80vw] max-md:w-[90vw] m-auto max-md:my10 my-20 max-md:my-10'>
 
-    <div className='flex flex-col justify-between w-[27vw] max-md:w-full h-[42vh] max-md:h-[36vh]'>
+    <div className='flex flex-col justify-between w-[27vw] max-md:w-full min-h-[40vh] max-md:h-[36vh]'>
       <h1 className='font-semibold text-2xl'>Delivery Information</h1>
       <div className='flex'>
         <input className='p-1 mr-3 w-48 max-md:w-[48%] border border-gray-600 rounded-[4px] ' type="text" placeholder='First name' name='firstName' value={data.firstName} onChange={onChangeHandler} required />
